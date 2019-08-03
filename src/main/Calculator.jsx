@@ -5,7 +5,20 @@ import Button from '../components/Button'
 import Display from '../components/Display'
 
 export default class Calculator extends Component {
-    render(){
+
+    clearMemory() {
+        console.log('limpar')
+    }
+
+    setOperation(operation) {
+        console.log(operation)
+    }
+
+    addDigit(n) {
+        console.log(n)
+    }
+
+    render() {
         return (
            <div className="calculator">
                <Display value={100}/>
