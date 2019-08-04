@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Button.css'
 
 export default props => {
@@ -9,7 +9,7 @@ export default props => {
 
     return (
         <button
-            onClick={props.click && props.click(props.label)} 
+            onClick={e => props.click(props.label)} 
             className={classes}> 
             {props.label}
         </button>
